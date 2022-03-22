@@ -11,8 +11,8 @@
         <div class="tagDiv">
             <span>Landing Page</span>
         </div>
-        <img style="border-radius: 8px" width="160" height="160" v-if="cardData.image" :src="require('@/assets/img/' + cardData.image)"/>
-        <span class="title"> {{cardData.title}} </span>
+        <img style="border-radius: 8px" width="160" height="160" :src="require('@/assets/img/cardImage.png')"/>
+        <span class="title"> Name of the step </span>
         <div class="card-info-row" style="margin-top: 10px;">
             <div style="display: flex; align-items: center">
                 <img class="card-icon" style="height: 9.9px;" :src="require('@/assets/icons/revenue.svg')">
@@ -49,20 +49,6 @@
     import '@mdi/font/css/materialdesignicons.css'
     const props = defineProps({ id: Number})
     const menuVisible = ref(false);
-    const cardData = ref({
-        image: 'cardImage.png',
-        tag: 'Upsell',
-        title: 'Name of the step',
-        revenue: {
-            value: 1800,
-            percentage: 37
-        },
-        clickThrough: {
-            value: 1900,
-            percentage: 22
-        },
-        pageVisits: 182900
-    });
 </script>
 <style scoped>
     .draggable-card {
