@@ -12,7 +12,7 @@
             <span>Landing Page</span>
         </div>
         <img style="border-radius: 8px" width="160" height="160" v-if="cardData.image" :src="require('@/assets/img/' + cardData.image)"/>
-        <span class="title"> {{this.cardData.title}} </span>
+        <span class="title"> {{cardData.title}} </span>
         <div class="card-info-row" style="margin-top: 10px;">
             <div style="display: flex; align-items: center">
                 <img class="card-icon" style="height: 9.9px;" :src="require('@/assets/icons/revenue.svg')">
