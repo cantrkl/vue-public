@@ -68,7 +68,7 @@
     function dropItem(droppedStep){
         let item = store.state.cards.find(x => x.dragging)
         gsap.to(item.position, .5, [droppedStep.position[0] - 70, droppedStep.position[1] - 100]);
-        this.stopItemDrag(item)
+        stopItemDrag(item)
         item.canDrop = false;
         store.dispatch('deleteCard', {'id': droppedStep.id})
     }
